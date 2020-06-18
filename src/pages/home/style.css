@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Roboto:wght@100;400;500;700;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.page{
+    background: URL("../assets/background-img.png") no-repeat;
+    background-size: cover;
+
+    width: 100%;
+    max-width: 1900px;
+    height: 100vh;
+    padding-top: 20px;
+}
+
+.name{
+    margin-left: 440px;
+}
+.name h1{
+    font-family: 'Anton', sans-serif;
+    color: #fff;
+    font-size: 170px;
+
+    text-transform: uppercase;
+}
+
+.info-page{
+    background-color: rgba(0,0,0,0.7);
+
+    padding: 20px;
+    margin: 50px;
+    margin-top: 110px;
+
+    width: 50vw;
+
+    border-radius: 20px;
+}
+.info-page h2{
+    font-family: 'Anton', sans-serif;
+    color: #fff;
+    font-size: 65px;
+
+    text-transform: uppercase;
+
+    margin-bottom: 0px;
+}
+.info-page p{
+    color: #fff;
+    font-size: 30px;
+    font-weight: 100;
+
+    margin-top: 0px;
+}
+.info-page a{
+    font-size: 18px;
+
+    display: block;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    color: #0B44B5;
+
+    margin-left: 430px;
+
+}
+a:hover{
+    text-decoration: none;
+    opacity: 70%
+}
