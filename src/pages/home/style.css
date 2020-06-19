@@ -10,8 +10,8 @@
 
 
 .page{
-    background: URL("../assets/background-img.png") no-repeat;
-    background-size: cover;
+    background: URL("../../assets/background-img.png") no-repeat; 
+    background-size: cover; 
 
     width: 100%;
     max-width: 1900px;

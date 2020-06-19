@@ -14,7 +14,7 @@ export default function Home(){
                     <h2>Annotations,</h2>
                     <p>um site para você criar suas anotações e <br/>consulta-las quando quiser</p>
                     <Link to="/criar">Criar Nova Anotação</Link>
-                    <Link to="/anotacoes">Ir Para Anotações</Link>
+                    <Link to="/all">Ir Para Anotações</Link>
                 </div>
             </div>
         </>

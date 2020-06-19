@@ -1,0 +1,20 @@
+.anotation{
+    padding: 7px;
+    border-radius: 10px;
+    background: #a5a9b5;
+    color: rgb(0, 0, 0);
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 25px;
+}
+.anotation h2{
+    font-weight: 900;
+}
+.anotation bottom{
+    float: right;
+    margin-right: 15px;
+    
+}
+.anotation p{
+    font-weight: 500;
+    font-size: 17px;
+}
