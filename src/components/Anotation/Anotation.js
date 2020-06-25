@@ -1,15 +1,38 @@
-import React from 'react'
+import React, {useEffect, useState} from 'react'
 
 import './style.css';
 
-export default function Anotation(){
+import api from '../../api.js';
+
+
+export default function Anotation(props){
+
+    const [posts, setPosts] = useState([])
+
+    useEffect(() => {
+        async function getData() {
+            const response = await api.get('/all')
+
+            setPosts(response.data)
+        };
+        getData();
+    }, [])
+
+    function delPost(event){
+        var id = event.target.id
+
+        api.post("/del", { id })
+        window.location.reload()
+    }
     return (
         <>
-            <div className="anotation">
-                <bottom type="submit" class="btn btn-dark">X</bottom>
-                <h2>dg</h2>
-                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente molestiae, ad, suscipit est necessitatibus atque hic esse animi perferendis inventore accusantium laboriosam? Numquam cum cumque illum doloremque repellat eos facilis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium voluptas fugit illum nulla numquam quidem velit iusto tempore quo, vitae tempora eveniet fuga sint deserunt quibusdam nostrum quae odio commodi?</p>
-            </div>
+            {posts.map((post) => {
+                return <div className="anotation" key={post.id}>
+                            <button  id={post.id} onClick={delPost} className="btn btn-dark">X</button>
+                            <h2>{post.title}</h2>
+                            <p>{post.content}</p>
+                        </div>
+            })}
         </>
     );
 };

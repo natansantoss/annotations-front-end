@@ -8,8 +8,8 @@ export default function Header(){
         <>
             <div>
                 <ul>
-                    <li><Link to="/" exact>Home</Link></li>
-                    <li><Link to="/criar" exact>Criar</Link></li>
+                    <li><Link to="/" >Home</Link></li>
+                    <li><Link to="/criar" >Criar</Link></li>
                     <li><Link to="/all">Anotações</Link></li>
                 </ul>
             </div>

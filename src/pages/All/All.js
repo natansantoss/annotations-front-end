@@ -12,11 +12,7 @@ export default function All(){
             <div className="page-all">
                 <Header />
 
-                <div className="container">
-                    <Anotation />
-                    <Anotation />
-                    <Anotation />
-                    <Anotation />
+                <div className="container"> 
                     <Anotation />
                 </div>
                 <Footer />
